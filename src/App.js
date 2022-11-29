@@ -3,7 +3,8 @@ import Scenario from "./Scenario";
 import Form from "./Form";
 import Success from "./Success";
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
   // User scenario state
@@ -12,7 +13,7 @@ export default function App() {
   const [form, setForm] = useState(null);
 
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <h1>test</h1><Routes>
           <Route
@@ -38,7 +39,7 @@ export default function App() {
           ></Route>
         </Routes>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 // The FORKED ONE
