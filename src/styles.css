@@ -1,6 +1,11 @@
 :root {
-  --line: rgb(255, 255, 255, 0.35);
-  --highlight: rgb(255, 255, 255, 0.15);
+  --background: white;
+  --text: #323232;
+  --line: #dcdcdc;
+  --tableHeader: #f0f0f0;
+  --tableCell: #F8F9F9;
+  --accent: #EE5A00;
+  --success: #009f33;
 }
 
 * {
@@ -8,16 +13,17 @@
   margin: 0;
   padding: 0;
   font-size: 1rem;
-  color: white;
+  color: var(--text);
   text-align: left;
 }
 
 body {
-  background-color: black;
+  background-color: var(--background);
 }
 
 .App {
-  font-family: sans-serif;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
@@ -43,12 +49,12 @@ input[type="radio"] {
 .notification {
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
-  border-left: 0.5rem solid darkorchid;
-  background-color: var(--highlight);
+  border-left: 0.5rem solid var(--accent);
+  background-color: var(--tableHeader);
 }
 
 .success {
-  border-left: 1rem solid greenyellow;
+  border-left: 1rem solid var(--success);
 }
 
 li {
@@ -70,14 +76,17 @@ li {
 select {
   width: 100%;
   padding: 0.5rem;
+  border-color: var(--line);
 }
 
 input[type="submit"] {
-  border-radius: 0.5rem;
-  padding: 0.75rem 1rem;
+  border-radius: 3rem;
+  padding: 0.75rem 1.5rem;
   border: none;
-  background-color: darkorchid;
-  color: black;
+  background-color: var(--accent);;
+  color: var(--background);
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
 }
 
 input[type="submit"],
@@ -94,7 +103,7 @@ table {
 }
 
 th {
-  background-color: var(--highlight);
+  background-color: var(--tableHeader);
 }
 th,
 td {
@@ -107,7 +116,9 @@ td:not(:last-child) {
 tr {
   border-bottom: 1px solid var(--line);
 }
-
+tr:nth-child(even) {
+  background-color: var(--tableCell);
+}
 .button-row {
   width: 100%;
   display: flex;
@@ -122,7 +133,7 @@ h1,
 
 button,
 select {
-  background-color: var(--highlight);
+  background-color: var(--tableCell);
 }
 
 table,
