@@ -1,16 +1,16 @@
 const RadioButtonGroup = (props) => {
   const radioButtons = props.texts.labels.map((element, index) => {
     return (
-      <div key={"radiobutton" + index}>
+      <label key={"radiobutton" + index}>
         <input
           type="radio"
           name={props.texts.title ? props.texts.title : "Account"}
           value={element}
           defaultChecked={index === 0 && "true"}
-        ></input>
-        <label htmlFor={element}>{element}</label>
+        />
+        {element}
         <br />
-      </div>
+      </label>
     );
   });
   return (
