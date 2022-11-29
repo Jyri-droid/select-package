@@ -21,7 +21,7 @@ const Success = (props) => {
       />
       <form onSubmit={handleSubmit}>
         <ButtonRow>
-          <Submit text="Reset flow" />
+          <Submit text="Restart flow" />
         </ButtonRow>
       </form>
     </>
