@@ -1,7 +1,7 @@
-import "./select-package/styles.css";
-import Scenario from "./select-package/Scenario";
-import Form from "./select-package/Form";
-import Success from "./select-package/Success";
+import "./styles.css";
+import Scenario from "./Scenario";
+import Form from "./Form";
+import Success from "./Success";
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
