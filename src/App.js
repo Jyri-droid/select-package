@@ -14,7 +14,7 @@ export default function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
+        <h1>test</h1><Routes>
           <Route
             exact
             path="/"
