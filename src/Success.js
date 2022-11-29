@@ -16,12 +16,12 @@ const Success = (props) => {
       <h1>Select product package</h1>
       <Notification
         success
-        title="Your selection has been saved"
+        title="Antamasi tiedot on tallennettu"
         list={props.form}
       />
       <form onSubmit={handleSubmit}>
         <ButtonRow>
-          <Submit text="Restart flow" />
+          <Submit text="Aloita alusta" />
         </ButtonRow>
       </form>
     </>

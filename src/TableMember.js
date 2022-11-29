@@ -4,33 +4,41 @@ const TableMember = (props) => {
       <table>
         <thead>
           <tr>
-            <th>Features</th>
-            <th>Member</th>
+            <th>Palvelu</th>
+            <th>Omistaja-asiakas</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Price</td>
-            <td>Free</td>
+            <td>Palvelupaketin kuukausivelotus</td>
+            <td>Ilman kuluja</td>
           </tr>
           <tr>
-            <td>Feature 1</td>
+            <td>Arvo-osuustili ja arvopaperisäilytys</td>
+            <td>V</td>
+          </tr>
+          <tr>
+            <td>Ulkomaisten osakkeiden säilytys</td>
             <td>Yes</td>
           </tr>
           <tr>
-            <td>Feature 2</td>
+            <td>Raportointi</td>
             <td>Yes</td>
           </tr>
           <tr>
-            <td>Feature 3</td>
+            <td>Osake- ja markkina-analyysi</td>
             <td>Yes</td>
           </tr>
           <tr>
-            <td>Feature 4</td>
+            <td>Kansainvälinen analyysi</td>
             <td>Yes</td>
           </tr>
           <tr>
-            <td>Feature 5</td>
+            <td>Reaaliaikaiset kurssit, 5 tasoa</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Markkinoiden seurantatyökalu</td>
             <td>Yes</td>
           </tr>
         </tbody>

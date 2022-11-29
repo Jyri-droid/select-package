@@ -6,12 +6,12 @@ const Scenario = (props) => {
   // Radio button group texts
   const texts = {
     membership: {
-      title: "Membership",
-      labels: ["Not a member", "Member"]
+      title: "Omistaja-asiakas",
+      labels: ["Kyllä", "Ei"]
     },
     account: {
-      title: "Account",
-      labels: ["No account", "One account", "Multiple accounts"]
+      title: "Veloitustili",
+      labels: ["Ei valittu", "Yksi tili", "Monta tiliä"]
     }
   };
   // Handle form submit
@@ -29,10 +29,10 @@ const Scenario = (props) => {
     props.setScenario(saved);
     // If user has account, set default notification
     let account = "";
-    saved[1] === "One account"
-      ? (account = "Account 0123456789")
+    saved[1] === "Yksi tili"
+      ? (account = "Tili 0123456789")
       : (account = "Deposit 1 – Account 0123456789");
-    props.setForm(["Membership: " + saved[0], account]);
+    props.setForm(["Omistaja-asiakas: " + saved[0], account]);
     console.log(saved);
     // Navigate to Form page
     navigate("/form");
@@ -40,7 +40,7 @@ const Scenario = (props) => {
 
   return (
     <>
-      <h1>Select scenario</h1>
+      <h1>Lähtötilanne</h1>
       <form onSubmit={handleSubmit}>
         <div className="box">
           <div className="column-one">
@@ -50,7 +50,7 @@ const Scenario = (props) => {
             <RadioButtonGroup texts={texts.account} />
           </div>
         </div>
-        <Submit text="Start user flow" />
+        <Submit text="Aloita" />
       </form>
     </>
   );

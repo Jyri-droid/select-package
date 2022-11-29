@@ -13,7 +13,7 @@ const Form = (props) => {
   const [alert, setAlert] = useState(false);
   // Handle input alert
   const accountChange = (event) => {
-    if (props.scenario[1] !== "No account") {
+    if (props.scenario[1] !== "Ei valittu") {
       props.form.toString().includes(event.target.value)
         ? setAlert(false)
         : setAlert(true);
@@ -25,9 +25,9 @@ const Form = (props) => {
     event.preventDefault();
     const saved = [];
     // Add deposit creation if user has no account
-    props.scenario[1] === "No account" && saved.push("New deposit created");
+    props.scenario[1] === "Ei valittu" && saved.push("Uusi säilytys avattu");
     // Add membership
-    saved.push("Membership: " + props.scenario[0]);
+    saved.push("Omistaja-asiakas: " + props.scenario[0]);
     // Add user selections
     for (const element of event.target) {
       switch (element.type) {
@@ -50,21 +50,21 @@ const Form = (props) => {
   return (
     <>
       <h1>Select product package</h1>
-      {props.scenario[1] !== "No account" ? (
+      {props.scenario[1] !== "Ei valittu" ? (
         <Notification
-          title="Your current package"
+          title="Voimassa oleva paketti"
           list={props.form.map((element) => element)}
         />
       ) : (
-        <Notification title="You will be created a deposit upon save" />
+        <Notification title="Sinulle avataan säilytys kun avaat palvelupaketin" />
       )}
       <form onSubmit={handleSubmit}>
         <div className="box">
           <div className="column-one">
-            <h2>Package</h2>
+            <h2>Palvelupaketti</h2>
           </div>
           <div className="column-two">
-            {props.scenario[0] === "Member" ? (
+            {props.scenario[0] === "Kyllä" ? (
               <TableMember />
             ) : (
               <TableNonMember />
@@ -74,19 +74,19 @@ const Form = (props) => {
         <div className="box">
           <div className="column-one">
             <h2>
-              {props.scenario[1] === "No account"
-                ? "Add account"
-                : "Select account"}
+              {props.scenario[1] === "Ei valittu"
+                ? "Lisää veloitustili"
+                : "Valitse veloitustili"}
             </h2>
           </div>
           <div className="column-two">
-            {props.scenario[1] !== "Multiple accounts" ? (
+            {props.scenario[1] !== "Monta tiliä" ? (
               <Select
-                name="Account"
+                name="Veloitustili"
                 options={[
-                  "My account 0123456789",
-                  "My account 9876543210",
-                  "My account 5432109876"
+                  "Tili 0123456789",
+                  "Tili 9876543210",
+                  "Tili 5432109876"
                 ]}
                 onChange={accountChange}
               />
@@ -94,19 +94,19 @@ const Form = (props) => {
               <RadioButtonGroup
                 texts={{
                   labels: [
-                    "Deposit 1 – My account 0123456789",
-                    "Deposit 2 –My account 9876543210"
+                    "Säilytys 1 - Tili 0123456789",
+                    "Säilytys 2 - Tili 9876543210"
                   ]
                 }}
               ></RadioButtonGroup>
             )}
             {alert && (
-              <p className="alert">Please note: change will take 2 days</p>
+              <p className="alert">Uusi veloitustili astuu voimaan kahden pankkipäivän kuluttua</p>
             )}
           </div>
         </div>
         <ButtonRow>
-          <Submit text="Save" />
+          <Submit text="Tilaa paketti" />
         </ButtonRow>
       </form>
     </>
