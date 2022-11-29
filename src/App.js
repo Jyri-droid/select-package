@@ -14,6 +14,7 @@ export default function App() {
   return (
     <Router basename="/select-package">
       <div className="App">
+        <Routes>
           <Route
             exact
             path="/"
