@@ -81,6 +81,8 @@ input[type="submit"] {
 }
 
 input[type="submit"],
+input[type="radio"],
+label,
 select {
   cursor: pointer;
 }
