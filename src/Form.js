@@ -49,7 +49,7 @@ const Form = (props) => {
   };
   return (
     <>
-      <h1>Select product package</h1>
+      <h1>Valitse sijoittajan palvelupaketti</h1>
       {props.scenario[1] !== "Ei valittu" ? (
         <Notification
           title="Voimassa oleva paketti"

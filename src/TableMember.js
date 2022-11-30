@@ -15,46 +15,46 @@ const TableMember = (props) => {
           </tr>
           <tr>
             <td>Arvo-osuustili ja arvopaperisäilytys</td>
-            <td>V</td>
+            <td><span className="material-symbols-sharp">done</span></td>
           </tr>
           <tr>
             <td>Ulkomaisten osakkeiden säilytys</td>
-            <td>Yes</td>
+            <td><span className="material-symbols-sharp">done</span></td>
           </tr>
           <tr>
             <td>Raportointi</td>
-            <td>Yes</td>
+            <td><span className="material-symbols-sharp">done</span></td>
           </tr>
           <tr>
             <td>Osake- ja markkina-analyysi</td>
-            <td>Yes</td>
+            <td><span className="material-symbols-sharp">done</span></td>
           </tr>
           <tr>
             <td>Kansainvälinen analyysi</td>
-            <td>Yes</td>
+            <td><span className="material-symbols-sharp">done</span></td>
           </tr>
           <tr>
             <td>Reaaliaikaiset kurssit, 5 tasoa</td>
-            <td>Yes</td>
+            <td><span className="material-symbols-sharp">done</span></td>
           </tr>
           <tr>
             <td>Markkinoiden seurantatyökalu</td>
-            <td>Yes</td>
+            <td><span className="material-symbols-sharp">done</span></td>
           </tr>
         </tbody>
       </table>
       <table>
         <thead>
           <tr>
-            <th>Extra features</th>
-            <th>Price</th>
-            <th>Select</th>
+            <th>Lisäpalvelut</th>
+            <th>Kuukausiveloitus</th>
+            <th>Valitse</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Feature</td>
-            <td>4,99 €</td>
+            <td>Reaaliaikaiset uutiset</td>
+            <td>+5,00 €</td>
             <td>
               <input name="Extra feature" type="checkbox" />
             </td>

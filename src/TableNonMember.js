@@ -4,70 +4,85 @@ const TableNonMember = (props) => {
       <table>
         <thead>
           <tr>
-            <th>Feature</th>
-            <th>Non-member</th>
-            <th>Member</th>
+            <th>Palvelu</th>
+            <th>Muut asiakkaat</th>
+            <th>Omistaja-asiakas</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Price</td>
-            <td>4,99 €</td>
-            <td>Free</td>
+            <td>Palvelupaketin kuukausiveloitus</td>
+            <td>2,99 €</td>
+            <td>Ilman kuluja</td>
           </tr>
           <tr>
-            <td>Feature 1</td>
-            <td>Yes</td>
-            <td>Yes</td>
+            <td>Arvo-osuustili ja arvopaperisäilytys</td>
+            <td><span className="material-symbols-sharp">done</span></td>
+            <td><span className="material-symbols-sharp">done</span></td>
           </tr>
           <tr>
-            <td>Feature 2</td>
-            <td>Yes</td>
-            <td>Yes</td>
+            <td>Ulkomaisten osakkeiden säilytys</td>
+            <td>Katso hinnasto <span className="material-symbols-sharp default">open_in_new</span></td>
+            <td><span className="material-symbols-sharp">done</span></td>
           </tr>
           <tr>
-            <td>Feature 3</td>
-            <td>Yes</td>
-            <td>Yes</td>
+            <td>Raportointi</td>
+            <td><span className="material-symbols-sharp">done</span></td>
+            <td><span className="material-symbols-sharp">done</span></td>
           </tr>
           <tr>
-            <td>Feature 4</td>
-            <td>Extra feature</td>
-            <td>Yes</td>
+            <td>Osake- ja markkina-analyysi</td>
+            <td><span className="material-symbols-sharp">done</span></td>
+            <td><span className="material-symbols-sharp">done</span></td>
           </tr>
           <tr>
-            <td>Feature 5</td>
-            <td>Extra feature</td>
-            <td>Yes</td>
+            <td>Kansainvälinen osakeanalyysi</td>
+            <td><span className="material-symbols-sharp">done</span></td>
+            <td><span className="material-symbols-sharp">done</span></td>
           </tr>
           <tr>
-            <td>Feature 6</td>
-            <td>No</td>
-            <td>Yes</td>
+            <td>Reaaliaikaiset kurssit, 1 tarjoustaso</td>
+            <td><span className="material-symbols-sharp">done</span></td>
+            <td><span className="material-symbols-sharp">done</span></td>
+          </tr>
+          <tr>
+            <td>Reaaliaikaiset kurssit, 5 tarjoustasoa</td>
+            <td>Lisäpalvelu</td>
+            <td><span className="material-symbols-sharp">done</span></td>
+          </tr>
+          <tr>
+            <td>Reaaliaikaiset uutiset</td>
+            <td>Lisäpalvelu</td>
+            <td>Lisäpalvelu</td>
+          </tr>
+          <tr>
+            <td>Markkinoiden seurantatyökalu</td>
+            <td><span className="material-symbols-sharp not-included">close</span></td>
+            <td><span className="material-symbols-sharp">done</span></td>
           </tr>
         </tbody>
       </table>
       <table>
         <thead>
           <tr>
-            <th>Extra features</th>
-            <th>Price</th>
-            <th>Select</th>
+            <th>Lisäpalvelut</th>
+            <th>Kuukausiveloitus</th>
+            <th>Valitse</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Feature 4</td>
-            <td>+4,99 €</td>
+            <td>Reaaliaikaiset kurssit, 5 tarjoustasoa</td>
+            <td>+5,00 €</td>
             <td>
-              <input name="Extra feature 4" type="checkbox" />
+              <input name="Reaaliaikaiset kurssit, 5 tarjoustasoa" type="checkbox" />
             </td>
           </tr>
           <tr>
-            <td>Feature 5</td>
-            <td>+4,99 €</td>
+            <td>Reaaliaikaiset uutiset</td>
+            <td>+5,00 €</td>
             <td>
-              <input name="Extra feature 5" type="checkbox" />
+              <input name="Reaaliaikaiset uutiset" type="checkbox" />
             </td>
           </tr>
         </tbody>
