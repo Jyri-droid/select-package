@@ -7,7 +7,7 @@
    * Exception: in `package.json` -> instead of `"https://Jyri-droid.github.io/select-package"`, `"homepage"` needs to be `"/select-package/#"`
    * Addition: `<Router>` component needs a base name. In `App.js` -> `<Router basename="/select-package">`
 
-## Creating a new build
+## Updating build
 * Push code to GitHub as usual: `git add .` + `git commit -m "message"` + `git push`
 * After pushing, type in terminal: `npm run deploy`
 
