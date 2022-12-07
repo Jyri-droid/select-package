@@ -11,5 +11,5 @@
 * Push code to GitHub as usual: `git add .` + `git commit -m "message"` + `git push`
 * After pushing, type in terminal: `npm run deploy`
 
-## Read me text editing
-* [GitHub markup](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+## Read me markup
+* [GitHub writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
