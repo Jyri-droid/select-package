@@ -7,4 +7,5 @@
    * Addition: `<Router>` component needs a base name. In `App.js` -> `<Router basename="/select-package">`
 
 ## Creating a new build
-* After pushing code to GitHub, create build by typing in terminal: `npm run deploy`
+* Push code to GitHub as usual: `git add .` + `git commit -m "message"` + `git push`
+* After pushing, type in terminal: `npm run deploy`
