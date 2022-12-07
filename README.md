@@ -5,3 +5,4 @@
 * GitHub Pages were deployed based on these [instructions](https://github.com/gitname/react-gh-pages):
    * Exception: package.json -> instead of "https://Jyri-droid.github.io/select-package", "homepage" needs to be "/select-package/#"
    * Addition: <Router> component needed a base name. App.js -> <Router basename="/select-package">
+ 
